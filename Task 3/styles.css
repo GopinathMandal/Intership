@@ -1,0 +1,82 @@
+/* Apply Weather-Themed Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 0.8s ease-in-out;
+    backdrop-filter: blur(8px); /* Glass effect */
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input & Select Box */
+.converter input, .converter select, .converter button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.converter input:focus, .converter select:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+/* Convert Button */
+.converter button {
+    background: #ff6f61;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.converter button:hover {
+    background: #e85b50;
+}
+
+/* Result Display */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

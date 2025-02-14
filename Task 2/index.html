@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Your Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1 class="logo">ShopEasy</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#cart">Cart <span id="cart-count">(0)</span></a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Discover the Best Products</h2>
+            <p>Exclusive deals & unbeatable prices</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products" id="shop">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="smart watch.webp" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p>$49.99</p>
+                <button class="cart-btn" onclick="addToCart('Smart Watch', 49.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Wireless Headphones.webp" alt="Wireless Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>$29.99</p>
+                <button class="cart-btn" onclick="addToCart('Wireless Headphones', 29.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Gaming Mouse.webp" alt="Gaming Mouse">
+                <h3>Gaming Mouse</h3>
+                <p>$19.99</p>
+                <button class="cart-btn" onclick="addToCart('Gaming Mouse', 19.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Bluetooth Speaker.jpeg" alt="Bluetooth Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p>$34.99</p>
+                <button class="cart-btn" onclick="addToCart('Bluetooth Speaker', 34.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Fitness Band.jpg" alt="Fitness Band">
+                <h3>Fitness Band</h3>
+                <p>$39.99</p>
+                <button class="cart-btn" onclick="addToCart('Fitness Band', 39.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Wireless Keyboard.webp" alt="Wireless Keyboard">
+                <h3>Wireless Keyboard</h3>
+                <p>$24.99</p>
+                <button class="cart-btn" onclick="addToCart('Wireless Keyboard', 24.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Portable Charger.jpg" alt="Portable Charger">
+                <h3>Portable Charger</h3>
+                <p>$29.99</p>
+                <button class="cart-btn" onclick="addToCart('Portable Charger', 29.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="VR Headset.jpg" alt="VR Headset">
+                <h3>VR Headset</h3>
+                <p>$79.99</p>
+                <button class="cart-btn" onclick="addToCart('VR Headset', 79.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Tablet Stand.jpg" alt="Tablet Stand">
+                <h3>Tablet Stand</h3>
+                <p>$15.99</p>
+                <button class="cart-btn" onclick="addToCart('Tablet Stand', 15.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Laptop Cooling Pad.jpg" alt="Laptop Cooling Pad">
+                <h3>Laptop Cooling Pad</h3>
+                <p>$25.99</p>
+                <button class="cart-btn" onclick="addToCart('Laptop Cooling Pad', 25.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="cart-section" id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="clear-cart">Clear Cart</button>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
